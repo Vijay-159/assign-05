@@ -3,7 +3,7 @@
 Solve the 2 problems in .py files.
 ```
 01_smart_artist.py
-02_stuttering_keyboard.py
+02_stuttering_keyboard.py 
 ```
 
 Each file contains few functions, for which you have to write the implementation.
