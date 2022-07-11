@@ -1,2 +1,5 @@
 # Write down your observations and what did you learn new - in this file
 
+In the first code i used replace() but i got errors. So, i have used findall() but still i got error. So by looking at the eroor i have modified the code then i have got indentation error so i ahve modified it. Finally the code ran successfully.
+
+My logic is to apply findall() command but when i used it i got indentation error so i have modified it and the code ran succesfully.
