@@ -1,6 +1,6 @@
 '''
-User regular expressions 
-to find out the occurances of the words 
+User regular expressions
+to find out the occurances of the words
 typed by a stuttering keyboard.
 
 Reference to understand:
@@ -11,13 +11,15 @@ import re
 import unittest
 
 def stuttering_words(text, word):
-    """ 
+    """
     Return the number of occurances of the given word in string s.
     Where the starting character of the word must have been typed many number of times.
     """
     special_words = []
     # Write your implementation here
-
+    first = word[0]
+    last = word[1:]
+    special_words = re.findall(first+'+'+last,text)
     return special_words
 
 class Stuttering_words(unittest.TestCase):
@@ -34,7 +36,7 @@ class Stuttering_words(unittest.TestCase):
         text = "OOOOOPs is OOObjected OOOOriented PPPPProgramming. OOOOPs, OOOPs, OOPs"
         oops_words = stuttering_words(text, 'OOPs')
         self.assertEqual(oops_words, ['OOOOOPs', 'OOOOPs', 'OOOPs', 'OOPs'])
-        
+
 
     def test_ooh(self):
         text = "oooh tttthis kkkkkeyboard iiis dddddifficult tttto ttttype, ooooh, oooh, ooh"
